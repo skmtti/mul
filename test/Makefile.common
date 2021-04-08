@@ -1,0 +1,16 @@
+SRC = ../../riscv_pkg.sv ../../mul.sv ../../tb.sv 
+TEST = ./test.h
+TB_TOP = tb
+TOP = mul
+OBJ = a.out
+
+all: run
+
+$(OBJ) : $(SRC) $(TEST)
+	iverilog -g2012 $(SRC) -s $(TB_TOP) $(OPT)
+
+run : $(OBJ)
+	./$(OBJ)
+
+clean:
+	rm -f a.out wave.fst
