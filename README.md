@@ -11,9 +11,6 @@ signal|I/O|width|discription
 ---|---|---|---
 a|I|[31:0]|operand a
 b|I|[31:0]|operand b
-ope|I|[1:0]|00b: unsigned x unsigned <br>
-01b: unsigned x unsigned <br>
-10b: signed x unsigned <br>
-11b: unsigned x unsigned
+ope|I|[1:0]|00b: unsigned x unsigned <br>01b: unsigned x unsigned <br>10b: signed x unsigned <br>11b: unsigned x unsigned|
 out|O|[63:0]|multiplier output
 
