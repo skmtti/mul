@@ -3,6 +3,8 @@
 Since this multiplier is intended to be built into a RISC-V processor, 
 it supports unsigned x unsigned, signed x unsigned, and singed x signed 
 operations
+For the implementation of Wallace tree, I referred to the following site.
+https://github.com/madamalarevanth/32-bit-processor-
 
 ### Interface signals
 
